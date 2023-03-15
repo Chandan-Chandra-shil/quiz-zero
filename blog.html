@@ -73,7 +73,37 @@
     </div>
   </section>
   <hr>
- 
+  <div class=" text-center">
+    <h1 class="font-bold text-4xl mb-5">QuizTime Function: </h1>
+    <p class="text-2xl" > The function takes one parameter"dismiss" which is a boolean value. If dismiss is true, it clears the timer using the
+    "clearInterval" function and returns from the function.
+    
+    If dismiss is not true, the function creates an interval using the setInterval function. The interval function updates
+    the timer display by getting the HTML element with the ID of "count" and setting its innerHTML property to a string that
+    represents the current count in minutes and seconds. It also increments the count variable by 1.
+    
+    If the count is greater than 60 seconds, the function alternates between adding and removing CSS classes to change the
+    color of the timer display.
+    
+    The interval function runs every 1000 milliseconds  and will continue running until the clearInterval
+    function is called.</p>
+    <h1 class="font-bold text-4xl mb-5">ChooseQuiz Function: </h1>
+    <p class="text-2xl">The chooseQuiz function is a JavaScript function that is used to update the user's selected answer for a quiz question.
+    It takes two parameters: index and givenAns.
+    
+    First, the function checks if an answer object with the same id as the current quiz question already exists in the
+    answers array using the find method. If an answer object already exists, the function updates the existing object with
+    the new givenAns property value by using a for loop to iterate through the answers array and find the matching object.
+    Once the matching object is found, the splice method is used to update the object with the new givenAns value.
+    
+    If no answer object with the same id exists, the function creates a new answer object using the spread syntax to copy
+    all properties of the current quiz question object from the quizData array into a new object, and then adds the givenAns
+    property to the new object with the value of the givenAns parameter. The new answer object is then added to the answers
+    array using the push method.
+    
+    Finally, the displayAnswers function is called with the updated answers array to display the current set of answers to
+    the user.</p>
+  </div>
   
   
 </body>
