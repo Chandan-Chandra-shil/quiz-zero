@@ -54,7 +54,7 @@ const loadQuiz = async () => {
 
 // Displaying quiz on quiz page
 const displayQuiz = (data) => {
-  console.log(data);
+  
 
   if (!data) {
     quizContainer.innerHTML = "";
@@ -62,7 +62,7 @@ const displayQuiz = (data) => {
   }
 
   data.forEach((quiz, i) => {
-    console.log(data);
+    
 
     quizContainer.innerHTML += `<div class="m-3 py-3 px-4 shadow-sm rounded">
   <div class="flex items-center">
@@ -114,9 +114,10 @@ document.querySelector("#submit").addEventListener("click", () => {
   }
 
   // data setting on local storage and getting data from local storage
-  let storage = JSON.parse(localStorage.getItem("result"));
+  let storage = JSON.parse(localStorage.getItem("results"));
   if (storage) {
     localStorage.setItem(
+      
       "results",
       JSON.stringify([
         ...storage,
