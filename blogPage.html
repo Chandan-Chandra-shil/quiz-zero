@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head class="">
+
+<body class="constainer text-center">
+  <header>
+    <h1 class="text-center text-4xl mt-6 mb-6 font-bold">Welcome To Blog Page</h1>
+  </header>
+  <section>
+    <div class="flex gap-5 ml-5 mr-5 p-6">
+      <div class="border">
+        <h1 class="text-2xl font-semibold mb-2">1. What is the difference between forEach map and filter find?</h1><br>
+        <p class="text-xl mb-5">The main difference between forEach and filter is that forEach just a loop over the
+          array and
+          execute the
+          callback but
+          filter executes the callback and check its return value. If the value is true element remains in the resulting
+          array
+          but
+          if the return value is false the element will be removed for the resulting array.</p>
+
+        <h1 class="text-2xl font-semibold mb-2">2. Difference between local storage session storage and cookies?</h1>
+        <br>
+        <p class="text-xl">Local storage is useful for storing data that the user will need to access later, such as
+          offline data. Session storage
+          is a great way to improve the performance of your web applications. Cookies are a good choice for storing data
+          that
+          should not be persisted for a long time, such as session.</p>
+        <h1 class="text-2xl font-semibold mb-2">3. How does event loop work?</h1><br>
+        <p class="text-xl">Local storage is useful for storing data that the user will need to access later, such as
+          offline data. Session storage
+          is a great way to improve the performance of your web applications. Cookies are a good choice for storing data
+          that
+          should not be persisted for a long time, such as session.</p>
+      </div>
+      <div class="border">
+        <h1 class="text-2xl font-semibold mb-2">1. QuizTime function:</h1><br>
+        <p class="text-xl">The function takes one parameter"dismiss" which is a boolean value. If dismiss is true, it
+          clears the timer using the
+          "clearInterval" function and returns from the function.
+
+          If the count is greater than 60 seconds, the function alternates between adding and removing CSS classes to
+          change the
+          color of the timer display.
+
+          The interval function runs every 1000 milliseconds and will continue running until the clearInterval
+          function is called.</p>
+        <h1 class="text-2xl font-semibold mb-2">2. ChooseQuiz function:</h1><br>
+        <p class="text-xl">The chooseQuiz function is a JavaScript function that is used to update the user's selected
+          answer for a quiz question.
+
+
+          First, the function checks if an answer object with the same id as the current quiz question already exists in
+          the
+          answers array using the find method.
+
+          If no answer object with the same id exists, the function creates a new answer object using the spread syntax
+          to copy
+          all properties of the current quiz question object from the quizData array into a new object, and then adds
+          the givenAns
+          property to the new object with the value of the givenAns parameter. The new answer object is then added to
+          the answers
+          array using the push method.
+
+        </p>
+      </div>
+    </div>
+  </section>
+
+</body>
+
+</html>
